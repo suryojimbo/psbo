@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Category;
 use Alert;
+use Illuminate\Support\Facades\Auth;
 
 class CategoryController extends Controller
 {
@@ -20,6 +21,7 @@ class CategoryController extends Controller
 		$category->name = $request->name;
 		$category->parent_id = $request->parent_id;
 		$category->icon = $request->icon;
+		$category->user_id = Auth::user()->id;
 		$category->save();
 		Alert::success('Success Message', 'Data berhasil ditambah');
 		return redirect('admin/category');

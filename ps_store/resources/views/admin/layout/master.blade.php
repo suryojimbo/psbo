@@ -214,10 +214,22 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active"><a href="https://adminlte.io/docs"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-        <li><a href="https://adminlte.io/docs"><i class="fa fa-dashboard"></i> <span>Category</span></a></li>
-        <li><a href="https://adminlte.io/docs"><i class="fa fa-dashboard"></i> <span>Product</span></a></li>
+        <li class="active"><a href="{{ route('category.index') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+        <li><a href="{{ route('category.index') }}"><i class="fa fa-dashboard"></i> <span>Category</span></a></li>
         
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-folder"></i> <span>Product</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('product.index') }}"><i class="fa fa-circle-o"></i> Product List</a></li>
+            <li><a href="profile.html"><i class="fa fa-circle-o"></i> Add Product</a></li>
+          </ul>
+        </li>
+
         <li class="treeview active">
           <a href="#">
             <i class="fa fa-folder"></i> <span>Transaction</span>
