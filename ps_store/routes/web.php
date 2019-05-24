@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	alert()->message('Message', 'Optional Title');
+    return redirect('admin/category')->with('success', 'Profile updated!');
 });
 
 Auth::routes();

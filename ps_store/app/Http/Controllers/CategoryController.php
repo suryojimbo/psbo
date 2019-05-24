@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use Alert;
 
 class CategoryController extends Controller
 {
@@ -20,7 +21,8 @@ class CategoryController extends Controller
 		$category->parent_id = $request->parent_id;
 		$category->icon = $request->icon;
 		$category->save();
-		return redirect()->back();
+		Alert::success('Success Message', 'Data berhasil ditambah');
+		return redirect('admin/category');
 	}
 
 	// edit category
@@ -37,12 +39,14 @@ class CategoryController extends Controller
 		$category->parent_id = $request->parent_id;
 		$category->icon = $request->icon;
 		$category->save();
+		Alert::success('Success Message', 'Data berhasil diperbaharui');
 		return redirect(route('category.index'));
 	}
 
 	public function destroy($id) {
 		$category = Category::find($id);
 		$category->delete();
+		Alert::success('Success Message', 'Data berhasil dihapus');
 		return redirect(route('category.index'));
 	}
 }
