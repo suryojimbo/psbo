@@ -226,7 +226,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{ route('product.index') }}"><i class="fa fa-circle-o"></i> Product List</a></li>
-            <li><a href="profile.html"><i class="fa fa-circle-o"></i> Add Product</a></li>
+            <li><a href="{{ route('product.create') }}"><i class="fa fa-circle-o"></i> Add Product</a></li>
           </ul>
         </li>
 

@@ -27,6 +27,7 @@
                   <th>Photo</th>
                   <th>Product</th>
                   <th>Stock</th>
+                  <th>User</th>
                   <th>Action</th>
                 </tr>
               </thead>
@@ -36,10 +37,14 @@
                   $no = 1;
                 @endphp
                 @foreach($product as $item) 
+                <tr>
                   <td>{{ $no++ }}</td>
                   <td><img src="{{ url($item->photo) }}" width="50px"></td>
                   <td>{{ $item->name }}</td>
                   <td>{{ $item->stock }}</td>
+                  <td>{{ $item->user->name }}</td>
+                  <td><a = href="{{url('admin/product/'.$item->id.'/edit') }}" class="btn btn-sm btn-primary">Edit</a></td>
+                </tr>
                 @endforeach
               </tbody>
             </table>
