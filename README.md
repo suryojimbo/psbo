@@ -1,6 +1,6 @@
 # Pengembangan Sistem Beriorientasi Objek
 
-[Deskripsi](#deskripsi) | [User-Analisis](#user-analisis) | [Spesifikasi](#spesifikasi) | [Hasil](#hasil) |[Saran](#saran)
+[Deskripsi](#deskripsi) | [User-Analisis](#user-analisis) | [Spesifikasi](#spesifikasi) | [Hasil](#hasil) | [Saran](#saran)
 
 - Kelompok Kita
     * Mochamad Rhayfa - G64160054
@@ -10,7 +10,7 @@
 ## Deskripsi
 Aplikasi yang telah kami ada 2, yang pertama adalah aplikasi :
 * Toko online bernama PS Store, sebuah E-commerce seperti umumnya.
-* Aplikasi Polling belum bernama, sebuah aplikasi untung voting.
+* Aplikasi Polling belum bernama, sebuah aplikasi postingan untuk voting pollx`.
 
 ## User Analisis
 
@@ -67,7 +67,18 @@ Lingkungan Pengembangan Polling Application adalah sebagai berikut :
 
 ## Hasil dan Pembahasan
 
-ehe
+### PS Store
+Pengembangan kami belum rampung semua, baru sampai melakuan create dan update dari barang yang ingin dijual, dan sisi admin yang belum berfungsi dengan baik, berikut adalah cuplikan gambarnya.
+![1]
+![2]
+
+### Polling App
+Untuk pengembangan aplikasi yang ini, kami mengalami kendala dalam api fetch jadi kami tidak dapat melakukan login karena masih dianggap unauthorized access. Berikut adalah cuplikan demo aplikasinya.
+![1.1]
+![1.2]
+![1.3]
+![1.4]
 
 ## Saran
 Dibutuhkan waktu, niat, dan bakat yang lebih untuk mengembangkan aplikasinya, terutama dalam menggunakan framework SpringBoot.
+Minal aidin wal faidzin mohon maaf lahir dan batin.
