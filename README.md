@@ -68,26 +68,26 @@ Lingkungan Pengembangan Polling Application adalah sebagai berikut :
 
 ### PS Store
 Pengembangan kami belum rampung semua, baru sampai melakuan create dan update dari barang yang ingin dijual, dan sisi admin yang belum berfungsi dengan baik, berikut adalah cuplikan gambarnya.
-![1.1]
-![2.1]
+![1.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/list%20ps%20store.PNG?raw=true)
+![2.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/ps%20store%20admin.PNG?raw=true)
 
 Berikut adalah dokumentasi Use Case Diagram, Activity Diagram, dan Class diagram dari aplikasi PS Store. 
-![3.1]
-![4.1]
-![5.1]
+![3.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/use%20case%20PS%20Store.png?raw=true)
+![4.1](#)
+![5.1](#)
 
 ### Polling App
 Untuk pengembangan aplikasi yang ini, kami mengalami kendala dalam api fetch jadi kami tidak dapat melakukan login karena masih dianggap unauthorized access. Berikut adalah cuplikan demo aplikasinya.
-![2.1]
-![2.2]
-![2.3]
-![2.4]
+![2.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/springboot.jpg?raw=true)
+![2.2](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/springboot2.jpg?raw=true)
+![2.3](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/springboot3.jpg?raw=true)
+![2.4](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/springboot4.jpg?raw=true)
 
 
 Berikut adalah dokumentasi Use Case Diagram, Activity Diagram, dan Class diagram dari aplikasi Polling Application.
-![2.5]
-![2.6]
-![2.7]
+![2.5](#)
+![2.6](#)
+![2.7](#)
 
 ## Saran
 Dibutuhkan waktu, niat, dan bakat yang lebih untuk mengembangkan aplikasinya, terutama dalam menggunakan framework SpringBoot. ehe
