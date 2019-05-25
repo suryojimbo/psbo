@@ -1,11 +1,37 @@
 # Pengembangan Sistem Beriorientasi Objek
-![icon]https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjS8ZHZ8LXiAhW1juYKHR7JAKIQjRx6BAgBEAU&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLaravel&psig=AOvVaw3bsrFubx45JD5Kz_OTSzko&ust=1558846178911918
 
-![icon]https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjniZLy8LXiAhVM8XMBHXt4Co0QjRx6BAgBEAU&url=https%3A%2F%2Fmedium.com%2F%40marianfurdui%2Fhow-to-integrate-mixpanel-into-a-spring-boot-application-34e97c5ff039&psig=AOvVaw39kWKz_5PzBB7gXyzSMLcz&ust=1558846230276288
+[Deskripsi](#deskripsi) | [User-Analisis](#user-analisis) | [Spesifikasi](#spesifikasi) | [Hasil](#hasil) |[Saran](#saran)
 
-Kami mencoba mengembangkan sistem, namun adakalanya bahwa framework yang digunakan cukup sangat menantang sehingga sistem yang jadi masih simple
+- Kelompok Kita
+    * Mochamad Rhayfa - G64160054
+    * Ivan Mahinza - G64160066
+    * Suryo Hamukti S. - G64160095
 
-untuk penerapan Object Orientednya sudah terimplementasi bawaan dari framework SpringBootnya, dan aplikasi kami belum bisa save session.
+## Deskripsi
+Aplikasi yang telah kami ada 2, yang pertama adalah aplikasi :
+* Toko online bernama PS Store
+* Aplikasi Polling belum bernama
+
+## User Analisis
+
+### PS Store
+aplikasi ini digunakan dari tiga sisi user, yaitu ada penjual, admin, dan pembeli
+Penjual dapat melakukan :
+- CRUD barang yang ingin dijual
+
+Admin dapat melakukan : 
+- Mengubah status pembayaran
+- Mengatur kategori dan subkategori jenis barang
+- Mengubah status user
+- Mengontrol transaksi
+
+Pembeli dapat melakukan :
+- CRUD identitas
+- Melihat semua produk
+- Melihat detail produk
+- Melihat data penjual
+- CRUD bagian transaksi (meliputi add to cart sampai pembelian yang terkonfirmasi admin)
+
 
 Deskripsi singkat :
 ini adalah aplikasi chatting web dimana terdiri dari 1 channel saja dan siapapun bisa join tanpa harus register atau login
