@@ -8,15 +8,14 @@
     * Suryo Hamukti S. - G64160095
 
 ## Deskripsi
-Aplikasi yang telah kami ada 2, yang pertama adalah aplikasi :
+Aplikasi yang telah kami usaha kembangkan ada 2 yaitu aplikasi :
 * Toko online bernama PS Store, sebuah E-commerce seperti umumnya.
-* Aplikasi Polling belum bernama, sebuah aplikasi postingan untuk voting pollx`.
+* Aplikasi Polling belum bernama, sebuah aplikasi postingan untuk voting poll.
 
 ## User Analisis
 
 ### PS Store
 aplikasi ini memiliki user sebanyak tiga jenis user, yaitu ada penjual, admin, dan pembeli
-
 
 Penjual dapat melakukan :
 - CRUD barang yang ingin dijual
@@ -69,16 +68,27 @@ Lingkungan Pengembangan Polling Application adalah sebagai berikut :
 
 ### PS Store
 Pengembangan kami belum rampung semua, baru sampai melakuan create dan update dari barang yang ingin dijual, dan sisi admin yang belum berfungsi dengan baik, berikut adalah cuplikan gambarnya.
-![1]
-![2]
+![1.1]
+![2.1]
+
+Berikut adalah dokumentasi Use Case Diagram, Activity Diagram, dan Class diagram dari aplikasi PS Store. 
+![3.1]
+![4.1]
+![5.1]
 
 ### Polling App
 Untuk pengembangan aplikasi yang ini, kami mengalami kendala dalam api fetch jadi kami tidak dapat melakukan login karena masih dianggap unauthorized access. Berikut adalah cuplikan demo aplikasinya.
-![1.1]
-![1.2]
-![1.3]
-![1.4]
+![2.1]
+![2.2]
+![2.3]
+![2.4]
+
+
+Berikut adalah dokumentasi Use Case Diagram, Activity Diagram, dan Class diagram dari aplikasi Polling Application.
+![2.5]
+![2.6]
+![2.7]
 
 ## Saran
-Dibutuhkan waktu, niat, dan bakat yang lebih untuk mengembangkan aplikasinya, terutama dalam menggunakan framework SpringBoot.
+Dibutuhkan waktu, niat, dan bakat yang lebih untuk mengembangkan aplikasinya, terutama dalam menggunakan framework SpringBoot. ehe
 Minal aidin wal faidzin mohon maaf lahir dan batin.
