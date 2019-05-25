@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class CategoryController extends Controller
 {
 	public function index() {
-		$categorys = Category::where('parent_id',null)->get();
+		$categorys = Category::where('parent_id',null)->first();
 	    return view('admin.category.index',compact('categorys'));
 	}
 
