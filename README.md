@@ -72,9 +72,15 @@ Pengembangan kami belum rampung semua, baru sampai melakuan create dan update da
 ![2.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/ps%20store%20admin.PNG?raw=true)
 
 Berikut adalah dokumentasi Use Case Diagram, Activity Diagram, dan Class diagram dari aplikasi PS Store. 
-![3.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/use%20case%20PS%20Store.png?raw=true)
-![4.1](#)
-![5.1](#)
+
+Use Case Diagram Aplikasi PS Store:
+![3.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/usecase_fix.png)
+
+Activity Diagram pada proses bisnis transaksi:
+![4.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/activiti1.png)
+
+Activity Diagram pada proses melihat dan mengatur isi dari antarmuka sistem
+![5.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/activiti2.png)
 
 ### Polling App
 Untuk pengembangan aplikasi yang ini, kami mengalami kendala dalam api fetch jadi kami tidak dapat melakukan login karena masih dianggap unauthorized access. Berikut adalah cuplikan demo aplikasinya.
@@ -98,18 +104,18 @@ dan rapi. Disarankan juga untuk tidak menerapkan sistem kebut semalam layaknya m
 candi, karena kami sudah mencobanya dan gagal. Tidak baik juga untuk kesehatan.
 
 
-##Lampiran
+## Lampiran
 Design Pattern
-1. Data Access Pattern yang diterapkan adalah ORM Patterns . Sebuah fitur bawaan dari
+1. Data Access Pattern yang diterapkan adalah **ORM Patterns** . Sebuah fitur bawaan dari
 laravel yang sudah dijelaskan seperti diatas.
 
 
-2. Terdapat Singleton atau adanya suatu kelas yang berisi hanya satu instances saja, yaitu
+2. Terdapat **Singleton** atau adanya suatu kelas yang berisi hanya satu instances saja, yaitu
 admin
 
 
 Anti Pattern
-1. Ketiga dari kami mungkin merasakan Death March , adalah perasaan yang dirasa
+1. Ketiga dari kami mungkin merasakan **Death March** , adalah perasaan yang dirasa
 ditakdirkan untuk gagal, atau yang membutuhkan kerja keras yang tidak berkelanjutan,
 atau perasaan “Everyone knows that the project is going to be a disaster”. Dalam
 manejemen proyek, perasaan tipikal ini biasanya merupakan hasil dari harapan yang tidak
@@ -125,5 +131,5 @@ melelahkan (14 jam sehari, 7 hari minggu, dll) atau dengan mencoba "melempar (cu
 mayat ke masalah ", sering menyebabkan kelelahan ( burnout ). (dikutip dari wikipedia )
 
 
-2. Karena terjadi banyak pemangkasan pada fitur, terjadi Smoke and Mirrors yaitu sebuah
+2. Karena terjadi banyak pemangkasan pada fitur, terjadi **Smoke and Mirrors** yaitu sebuah
 fitur yang dijanjikan dari awal namun tidak jadi pada akhirnya.
