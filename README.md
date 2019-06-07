@@ -119,8 +119,7 @@ Use Case Diagram Aplikasi PS Store:
 * Use Case Type : Essential, Temporal
 * Primary Actor : Admin
 * Stakeholder and Interest : Supplier dan Pembeli
-* Brief Description : Di dalam use case ini, Admin bertugas untuk maintenance
-kondisi website.
+* Brief Description : Di dalam use case ini, Admin bertugas untuk maintenance kondisi website.
 * Pre-Condition : Melakukan pengelolaan bila ada request dari user, dan
 pengelolaan bulanan
 * Trigger :
@@ -137,13 +136,13 @@ pengelolaan bulanan
    - CRUD pada umumnya
 * Alternate/Exceptional Flows : -
 * Post-Condition : Tampilan dan Izin akses terbaharui
+
 2. UC2 : Menambah Produk Penjualan
 * Importance Level : Medium
 * Use Case Type : Essential, Temporal
 * Primary Actor : Supplier
 * Stakeholder and Interest : Pembeli
-* Brief Description : Di dalam use case ini, Supplier dapat menambah produk
-beserta stocknya
+* Brief Description : Di dalam use case ini, Supplier dapat menambah produk beserta stocknya
 * Pre-Condition : Telah login sebagai Supplier
 * Trigger :
    - Supplier ingin menambahkan jenis barang baru yang disuplainya kedalam
@@ -154,117 +153,111 @@ sistem (External)
    - Menambahkan stock produk pada database
    - Menghilangkan produk yang telah berhenti disuplai
 * Flow Events :
-** Login sebagai Supplier
-● Memilih produk mana yang ingin ditambah atau dihilangkan dan
-● Memberi pilihan yang akan diverifikasi admin
-● Tampilan akan terbaharui apabila verifikasi telah dilakukan oleh admin
-◆ Alternate/Exceptional Flows :
-● Admin men-decline verifikasi
-◆ Post-Condition : Data dalam sistem terbaharui
+   - Login sebagai Supplier
+   - Memilih produk mana yang ingin ditambah atau dihilangkan dan
+   - Memberi pilihan yang akan diverifikasi admin
+   - Tampilan akan terbaharui apabila verifikasi telah dilakukan oleh admin
+* Alternate/Exceptional Flows :
+   - Admin men-decline verifikasi
+* Post-Condition : Data dalam sistem terbaharui
+
 3. UC3 : Verifikasi
-◆ Importance Level : High
-◆ Use Case Type : Essential
-◆ Primary Actor : Admin
-◆ Stakeholder and Interest : Pembeli dan Supplier
-◆ Brief Description : Di dalam use case ini, Admin bertugas untuk memverifikasi
-seluruh transaksi dan barang transaksinya
-◆ Pre-Condition : Ada sebuah rangkaian kegiatan dari end-user yang perlu
+* Importance Level : High
+* Use Case Type : Essential
+* Primary Actor : Admin
+* Stakeholder and Interest : Pembeli dan Supplier
+* Brief Description : Di dalam use case ini, Admin bertugas untuk memverifikasi seluruh transaksi dan barang transaksinya
+* Pre-Condition : Ada sebuah rangkaian kegiatan dari end-user yang perlu
 diverifikasi
-◆ Trigger :
-● Mendapat keranjang yang ingin dibayar oleh pembeli
-● Mendapat request penambahan / penghilangan produk dari supplier
-◆ Events :
-● Melakukan verifikasi / Memberikan akses
-◆ Flow Events :
-● Pembelian :
-○ Admin mendapatkan keranjang yang ingin dibayar oleh pembeli
-○ Pembeli melakukan pembayaran dan mengupload bukti
-pembayaran ke sistem
-○ Admin melakukan verifikasi pembayaran di sistem dan
-mengirimkan barang ke pembeli dengan kurir pilihan pembeli
-○ Admin memberikan notifikasi transaksi sukses berhasil
-● Penambahan / Penghilangan suplai :
-○ Admin mendapatkan request dari supplier
-○ Admin memastikan barang ada dan didapat dari supplier yang
-tepat, lalu melakukan verifikasi
-○ Admin mengupdate database sistem
-○ Tampilan akan terbaharui apabila verifikasi telah dilakukan oleh
-admin
-◆ Alternate/Exceptional Flows :
-● Admin men-decline verifikasi
-◆ Post-Condition : Data dalam sistem terbaharui, Status Keranjang berubah menjadi
-Transaksi Berhasil, Barang sampai pada tangan pembeli.
+* Trigger :
+   - Mendapat keranjang yang ingin dibayar oleh pembeli
+   - Mendapat request penambahan / penghilangan produk dari supplier
+* Events :
+   - Melakukan verifikasi / Memberikan akses
+* Flow Events :
+   - Pembelian : 
+      - Admin mendapatkan keranjang yang ingin dibayar oleh pembeli
+      - Pembeli melakukan pembayaran dan mengupload bukti pembayaran ke sistem
+      - Admin melakukan verifikasi pembayaran di sistem dan mengirimkan barang ke pembeli dengan kurir pilihan pembeli
+      - Admin memberikan notifikasi transaksi sukses berhasil
+   - Penambahan / Penghilangan suplai :
+      - Admin mendapatkan request dari supplier
+      - Admin memastikan barang ada dan didapat dari supplier yang tepat, lalu melakukan verifikasi
+      - Admin mengupdate database sistem
+      - Tampilan akan terbaharui apabila verifikasi telah dilakukan oleh admin
+* Alternate/Exceptional Flows :
+   - Admin men-decline verifikasi
+* Post-Condition : Data dalam sistem terbaharui, Status Keranjang berubah menjadi Transaksi Berhasil, Barang sampai pada tangan pembeli.
+
 4. UC4 : Melakukan Transaksi
-◆ Importance Level : High
-◆ Use Case Type : Essential
-◆ Primary Actor : Pembeli
-◆ Stakeholder and Interest : Admin dan supplier
-◆ Brief Description : Di dalam use case ini, Pembeli melakukan inti proses bisnis
-sebuah jual beli
-◆ Pre-Condition : Telah login sebagai pembeli, sedang melihat lihat produk
-◆ Trigger :
-● Ada pembeli yang tertarik ingin membeli produk (External)
-◆ Events :
-● Melakukan proses jual beli
-◆ Flow Events :
-● Mencari / Melihat lihat produk
-● Melihat detail produk yang ingin dibeli
-● Menambahkan kedalam keranjang
-● Mencari produk lain yang ingin ditambahkan kedalam keranjang
-(opsional)
-● Melakukan Checkout
-● Mengupload bukti pembayaran
-● Terverifikasi oleh admin dan barang dikirim
-● Pembeli menerima barang beliannya.
-◆ Alternate/Exceptional Flows : Tidak ada kurir yang tersedia, transaksi gagal
+* Importance Level : High
+* Use Case Type : Essential
+* Primary Actor : Pembeli
+* Stakeholder and Interest : Admin dan supplier
+* Brief Description : Di dalam use case ini, Pembeli melakukan inti proses bisnissebuah jual beli
+* Pre-Condition : Telah login sebagai pembeli, sedang melihat lihat produk
+* Trigger :
+   - Ada pembeli yang tertarik ingin membeli produk (External)
+* Events :
+   - Melakukan proses jual beli
+* Flow Events :
+   - Mencari / Melihat lihat produk
+   - Melihat detail produk yang ingin dibeli
+   - Menambahkan kedalam keranjang
+   - Mencari produk lain yang ingin ditambahkan kedalam keranjang (opsional)
+   - Melakukan Checkout
+   - Mengupload bukti pembayaran
+   - Terverifikasi oleh admin dan barang dikirim
+   - Pembeli menerima barang beliannya.
+* Alternate/Exceptional Flows : Tidak ada kurir yang tersedia, transaksi gagal
 secara terpaksa
-◆ Post-Condition : Mendapatkan barang beliannya, riwayat pembelian terbaharui
+* Post-Condition : Mendapatkan barang beliannya, riwayat pembelian terbaharui
+
 5. UC5 : Melakukan Transaksi
-◆ Importance Level : High
-◆ Use Case Type : Essential
-◆ Primary Actor : Pembeli
-◆ Stakeholder and Interest : Admin dan supplier
-◆ Brief Description : Di dalam use case ini, Pembeli melakukan inti proses bisnis
-sebuah jual beli toko online
-◆ Pre-Condition : Telah login sebagai pembeli, sedang melihat lihat produk
-◆ Trigger :
-● Ada pembeli yang tertarik ingin membeli produk (External)
-◆ Events :
-● Melakukan proses jual beli
-◆ Flow Events :
-● Mencari / Melihat lihat produk
-● Melihat detail produk yang ingin dibeli
-● Menambahkan kedalam keranjang
-● Mencari produk lain yang ingin ditambahkan kedalam keranjang
-(opsional)
-● Melakukan Checkout
-● Mengupload bukti pembayaran
-● Terverifikasi oleh admin dan barang dikirim
-● Pembeli menerima barang beliannya.
-◆ Alternate/Exceptional Flows : Tidak ada kurir yang tersedia, transaksi gagal
-secara terpaksa
-◆ Post-Condition : Mendapatkan barang beliannya, riwayat pembelian terbaharui
+* Importance Level : High
+* Use Case Type : Essential
+* Primary Actor : Pembeli
+* Stakeholder and Interest : Admin dan supplier
+* Brief Description : Di dalam use case ini, Pembeli melakukan inti proses bisnis sebuah jual beli toko online
+* Pre-Condition : Telah login sebagai pembeli, sedang melihat lihat produk
+* Trigger :
+   - Ada pembeli yang tertarik ingin membeli produk (External)
+* Events :
+   - Melakukan proses jual beli
+* Flow Events :
+   - Mencari / Melihat lihat produk
+   - Melihat detail produk yang ingin dibeli
+   - Menambahkan kedalam keranjang
+   - Mencari produk lain yang ingin ditambahkan kedalam keranjang (opsional)
+   - Melakukan Checkout
+   - Mengupload bukti pembayaran
+   - Terverifikasi oleh admin dan barang dikirim
+   - Pembeli menerima barang beliannya.
+* Alternate/Exceptional Flows : Tidak ada kurir yang tersedia, transaksi gagal secara terpaksa
+* Post-Condition : Mendapatkan barang beliannya, riwayat pembelian terbaharui
+
 6. UC6: Melihat produk, supplier, beserta detailnya
-◆ Importance Level : Medium
-◆ Use Case Type : Essential, Temporal
-◆ Primary Actor : Pembeli, Supplier
-◆ Stakeholder and Interest : Admin, Supplier dan Pembeli
-◆ Brief Description : Di dalam use case ini, end-user dapat melihat apa saja yang
+* Importance Level : Medium
+* Use Case Type : Essential, Temporal
+* Primary Actor : Pembeli, Supplier
+* Stakeholder and Interest : Admin, Supplier dan Pembeli
+* Brief Description : Di dalam use case ini, end-user dapat melihat apa saja yang
 ditampilkan oleh sistem untuk diperjual belikan dan siapa supplier barangnya
-◆ Pre-Condition : Telah melakukan login
-◆ Trigger :
-● Ingin melihat detail spesifikasi produk (External)
-● Ingin melihat detail latar belakang suppliernya (External)
-● Supplier ingin melihat seberapa laku produk suplainya (Temporal)
-◆ Events :
-● Melihat lihat produk yang dijual di sistem
-◆ Flow Events :
-● Mencari dengan fitur search
-● Melakukan surfing berdasarkan kategori-subkategori
-● Menambahkan barang yang dilihat ke keranjang (akan lanjut ke proses
+* Pre-Condition : Telah melakukan login
+* Trigger :
+   - Ingin melihat detail spesifikasi produk (External)
+   - Ingin melihat detail latar belakang suppliernya (External)
+   - Supplier ingin melihat seberapa laku produk suplainya (Temporal)
+* Events :
+   - Melihat lihat produk yang dijual di sistem
+* Flow Events :
+   - Mencari dengan fitur search
+   - Melakukan surfing berdasarkan kategori-subkategori
+   - Menambahkan barang yang dilihat ke keranjang (akan lanjut ke proses
 transaksi)
-◆ Alternate/Exceptional Flows : -
-◆ Post-Condition : -
+* Alternate/Exceptional Flows : -
+* Post-Condition : -
+
 
 Activity Diagram aplikasi PS Store pada proses bisnis transaksi:
 ![4.1](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/activiti1.png)
