@@ -1,6 +1,6 @@
 # Pengembangan Sistem Beriorientasi Objek
 
-[Deskripsi](#deskripsi) | [User-Analisis](#user-analisis) | [Spesifikasi](#spesifikasi) | [Hasil](#hasil) | [Saran](#saran)
+[Deskripsi](#deskripsi) | [User-Analisis](#user-analisis) | [Spesifikasi](#spesifikasi) | [Hasil](#hasil) | [Saran](#saran) | Lampiran
 
 - Kelompok Kita
     * Mochamad Rhayfa - G64160054
@@ -9,8 +9,8 @@
 
 ## Deskripsi
 Aplikasi yang telah kami usaha kembangkan ada 2 yaitu aplikasi :
-* Toko online bernama PS Store, sebuah E-commerce seperti umumnya.
-* Aplikasi Polling belum bernama, sebuah aplikasi postingan untuk voting poll.
+* Toko online bernama PS Store, sebuah toko online seperti umumnya
+* Aplikasi Polling, sebuah aplikasi postingan untuk voting poll.
 
 ## User Analisis
 
@@ -84,11 +84,46 @@ Untuk pengembangan aplikasi yang ini, kami mengalami kendala dalam api fetch jad
 ![2.4](https://github.com/suryojimbo/psbo/blob/master/dokumentasi/springboot4.jpg?raw=true)
 
 
-Berikut adalah dokumentasi Use Case Diagram, Activity Diagram, dan Class diagram dari aplikasi Polling Application.
-![2.5](#)
-![2.6](#)
-![2.7](#)
-
 ## Saran
-Dibutuhkan waktu, niat, dan bakat yang lebih untuk mengembangkan aplikasinya, terutama dalam menggunakan framework SpringBoot. ehe
-Minal aidin wal faidzin mohon maaf lahir dan batin.
+Sebagai evaluasi dari sistem yang telah dibuat, ke depannya seluruh proses pembayaran
+sebaiknya dapat dilakukan dalam sistem tanpa harus verifikasi manual oleh admin toko. Namun
+terasa hambar berkata demikian jika aplikasinya saja belum rampung, jadi saran dari kami adalah
+bulatkan niat dan tekad ketika mengembangkan sebuah aplikasi, jangan mudah menyerah ketika
+bertemu pesan error. Di luar sana masih banyak developer yang terombang-ambing menghadapi
+error juga, dan lagi pula ada yang namanya stackoverflow yang menjadi teman baik anda ketika
+berhadapan dengan kode yang error (walaupun metode ini rentan menyebabkan anti-pattern
+namun tidak apa karena learning can be on the hard ways ).
+Selain itu, terapkan juga clean code pada kodingannya agar terdokumentasi dengan baik
+dan rapi. Disarankan juga untuk tidak menerapkan sistem kebut semalam layaknya membuat
+candi, karena kami sudah mencobanya dan gagal. Tidak baik juga untuk kesehatan.
+
+
+##Lampiran
+Design Pattern
+1. Data Access Pattern yang diterapkan adalah ORM Patterns . Sebuah fitur bawaan dari
+laravel yang sudah dijelaskan seperti diatas.
+
+
+2. Terdapat Singleton atau adanya suatu kelas yang berisi hanya satu instances saja, yaitu
+admin
+
+
+Anti Pattern
+1. Ketiga dari kami mungkin merasakan Death March , adalah perasaan yang dirasa
+ditakdirkan untuk gagal, atau yang membutuhkan kerja keras yang tidak berkelanjutan,
+atau perasaan “Everyone knows that the project is going to be a disaster”. Dalam
+manejemen proyek, perasaan tipikal ini biasanya merupakan hasil dari harapan yang tidak
+realistis atau terlalu optimis dalam scheduling, membuat fitur mewah, atau keduanya, dan
+sering kali termasuk kurangnya dokumentasi yang sesuai atau pelatihan yang relevan dan
+keahlian dari luar yang akan diperlukan untuk menyelesaikan tugasnya secara baik.
+Pengetahuan tentang sifat terkutuk dari proyek ini sangat membebani jiwa para
+pesertanya, seolah-olah mereka tidak berdaya menyaksikan diri mereka sendiri dan rekan
+kerja mereka dipaksa untuk menyiksa diri mereka sendiri dan berbaris menuju kematian.
+Seringkali, pawai kematian akan melibatkan upaya putus asa untuk memperbaiki
+jalannya proyek dengan meminta anggota tim untuk bekerja terutama jam yang
+melelahkan (14 jam sehari, 7 hari minggu, dll) atau dengan mencoba "melempar (cukup)
+mayat ke masalah ", sering menyebabkan kelelahan ( burnout ). (dikutip dari wikipedia )
+
+
+2. Karena terjadi banyak pemangkasan pada fitur, terjadi Smoke and Mirrors yaitu sebuah
+fitur yang dijanjikan dari awal namun tidak jadi pada akhirnya.
