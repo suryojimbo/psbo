@@ -138,23 +138,23 @@ pengelolaan bulanan
 * Alternate/Exceptional Flows : -
 * Post-Condition : Tampilan dan Izin akses terbaharui
 2. UC2 : Menambah Produk Penjualan
-◆ Importance Level : Medium
-◆ Use Case Type : Essential, Temporal
-◆ Primary Actor : Supplier
-◆ Stakeholder and Interest : Pembeli
-◆ Brief Description : Di dalam use case ini, Supplier dapat menambah produk
+* Importance Level : Medium
+* Use Case Type : Essential, Temporal
+* Primary Actor : Supplier
+* Stakeholder and Interest : Pembeli
+* Brief Description : Di dalam use case ini, Supplier dapat menambah produk
 beserta stocknya
-◆ Pre-Condition : Telah login sebagai Supplier
-◆ Trigger :
-● Supplier ingin menambahkan jenis barang baru yang disuplainya kedalam
+* Pre-Condition : Telah login sebagai Supplier
+* Trigger :
+   - Supplier ingin menambahkan jenis barang baru yang disuplainya kedalam
 sistem (External)
-● Memasukan suplai bulanan (Temporal)
-◆ Events :
-● Menambahkan jenis produk pada database
-● Menambahkan stock produk pada database
-● Menghilangkan produk yang telah berhenti disuplai
-◆ Flow Events :
-● Login sebagai Supplier
+   - Memasukan suplai bulanan (Temporal)
+* Events :
+   - Menambahkan jenis produk pada database
+   - Menambahkan stock produk pada database
+   - Menghilangkan produk yang telah berhenti disuplai
+* Flow Events :
+** Login sebagai Supplier
 ● Memilih produk mana yang ingin ditambah atau dihilangkan dan
 ● Memberi pilihan yang akan diverifikasi admin
 ● Tampilan akan terbaharui apabila verifikasi telah dilakukan oleh admin
