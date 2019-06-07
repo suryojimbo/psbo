@@ -29,37 +29,40 @@ hanya untuk pengelola bisnisnya.
 
 
 Supplier dapat melakukan :
-● Meminta verifikasi admin penambahan / penghilangan barang yang ingin dijual
-● Melihat produk dan detailnya
+* Meminta verifikasi admin penambahan / penghilangan barang yang ingin dijual
+* Melihat produk dan detailnya
 
 
 Admin dapat melakukan :
-● Mengubah status pembayaran
-● Mengatur kategori dan subkategori jenis barang
-● Mengubah status user
-● Mengontrol transaksi
+* Mengubah status pembayaran
+* Mengatur kategori dan subkategori jenis barang
+* Mengubah status user
+* Mengontrol transaksi
 
 
 Pembeli dapat melakukan :
-● CRUD identitas
-● Melihat semua produk
-● Melihat detail produk
-● Melihat data penjual
-● CRUD bagian transaksi (meliputi add to cart sampai pemberitahuan transaksi telah
+* CRUD identitas
+* Melihat semua produk
+* Melihat detail produk
+* Melihat data penjual
+* CRUD bagian transaksi (meliputi add to cart sampai pemberitahuan transaksi telah
 selesai)
 
 ## User Story
 Sebagai Pembeli, saya ingin melihat lihat produk apa saja yang dijual oleh PS Store.
 Keterangan : Terdapat Category dan Sub-Category, dan fitur search untuk memudahkan surfing
+
 Sebagai Supplier, saya ingin mendapat keuntungan melalui menyuplai barang di PS Store, dan
 juga mengetahui seberapa laku barang dagangan yang saya suplai.
 Keterangan : Saya bisa melakukan suplai apabila admin telah melakukan verifikasi /
 authorization terhadap suplai yang ingin saya salurkan, dan saya bisa melihat detail produk yang
 dijualnya
+
 Sebagai Pembeli, saya ingin membeli produk yang telah saya lihat di PS Store.
 Keterangan : Pembelian dilakukan dengan cara saya mencari dahulu apa saja yang saya ingin
 beli, kemudian dimasukkan kedalam keranjang, lalu saya melakukan checkout dan melakukan
 pembayaran di luar sistem, namun mengirim bukti pembayarannya kedalam sistem.
+
 Sebagai Admin, saya ingin mengelola website PS Store dimana website tersebut menjadi sarana
 barang barang yang didapat dari supplier ditawarkan kepada khalayak umum (pembeli).
 Tentunya saya perlu mengelola setiap adanya perubahan terkait konten website.
@@ -112,29 +115,28 @@ Use Case Diagram Aplikasi PS Store:
 
 ## Use Case Description
 1. UC1 : Mengelola Transaksi, Barang, dan Status User
-◆ Importance Level : High
-◆ Use Case Type : Essential, Temporal
-◆ Primary Actor : Admin
-◆ Stakeholder and Interest : Supplier dan Pembeli
-◆ Brief Description : Di dalam use case ini, Admin bertugas untuk maintenance
+* Importance Level : High
+* Use Case Type : Essential, Temporal
+* Primary Actor : Admin
+* Stakeholder and Interest : Supplier dan Pembeli
+* Brief Description : Di dalam use case ini, Admin bertugas untuk maintenance
 kondisi website.
-◆ Pre-Condition : Melakukan pengelolaan bila ada request dari user, dan
+* Pre-Condition : Melakukan pengelolaan bila ada request dari user, dan
 pengelolaan bulanan
-◆ Trigger :
-● Ada pembeli yang ingin jadi supplier (External)
-● Ada barang yang sudah lama tidak ada transaksi dan tidak ada kunjungan
-(External)
-● Ada supplier yang tak bertanggung jawab (External)
-● Pengelolaan perbulan (Temporal)
-◆ Events :
-● Menghapus / Mengubah User
-● Mengelola Jenis Barang
-● Menambahkan barang
-● Dan Lainnya
-◆ Flow Events :
-● CRUD pada umumnya
-◆ Alternate/Exceptional Flows : -
-◆ Post-Condition : Tampilan dan Izin akses terbaharui
+* Trigger :
+   - Ada pembeli yang ingin jadi supplier (External)
+   - Ada barang yang sudah lama tidak ada transaksi dan tidak ada kunjungan(External)
+   - Ada supplier yang tak bertanggung jawab (External)
+   - Pengelolaan perbulan (Temporal)
+* Events :
+   - Menghapus / Mengubah User
+   - Mengelola Jenis Barang
+   - Menambahkan barang
+   - Dan Lainnya
+* Flow Events :
+   - CRUD pada umumnya
+* Alternate/Exceptional Flows : -
+* Post-Condition : Tampilan dan Izin akses terbaharui
 2. UC2 : Menambah Produk Penjualan
 ◆ Importance Level : Medium
 ◆ Use Case Type : Essential, Temporal
